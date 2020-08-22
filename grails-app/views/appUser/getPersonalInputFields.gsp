@@ -9,8 +9,9 @@
 
     <div class="input-field col s12 m6">
         <i class="material-icons prefix">date_range</i>
-        <input id="dateOfBirth" name="dateOfBirth" required type="text" value="${appUser?.dateOfBirth}" class="datepicker validate birthday">
-        <label for="dateOfBirth">Birthdate (yyyy-mm-dd)</label>
+%{--        <input id="dateOfBirth" name="dateOfBirth" required type="text" value="${appUser?.dateOfBirth}" class="datepicker validate birthday">--}%
+        <input id="dateOfBirth" name="dateOfBirth" required type="date" value="${appUser?.dateOfBirth?.toString()?.substring(0,10)}" class="validate">
+        <label for="dateOfBirth">Birthdate</label>
     </div>
 
     <div class="input-field col s12 m6">

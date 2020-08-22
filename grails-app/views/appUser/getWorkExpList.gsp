@@ -42,7 +42,8 @@
 
                 <div class="input-field">
                     <i class="material-icons prefix">date_range</i>
-                    <input id="workExp-startDate-${i}" name="startDate" required type="text" value="${workExpItem?.startDate}" class="datepicker validate pastday">
+%{--                    <input id="workExp-startDate-${i}" name="startDate" required type="text" value="${workExpItem?.startDate}" class="datepicker validate pastday">--}%
+                    <input id="workExp-startDate-${i}" name="startDate" required type="date" value="${workExpItem?.startDate?.toString()?.substring(0,10)}" class="validate">
                     <label for="workExp-startDate-${i}">Start Date</label>
                 </div>
 
@@ -53,7 +54,7 @@
 
                 <div class="input-field">
                     <i class="material-icons prefix">date_range</i>
-                    <input id="workExp-endDate-${i}" name="endDate" type="text" value="${workExpItem?.endDate}" class="datepicker validate pastday">
+                    <input id="workExp-endDate-${i}" name="endDate" type="date" value="${workExpItem?.endDate?.toString()?.substring(0,10)}" class="validate">
                     <label for="workExp-endDate-${i}">End Date</label>
                 </div>
 

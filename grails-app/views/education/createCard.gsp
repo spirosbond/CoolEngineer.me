@@ -25,7 +25,7 @@
 
             <div class="input-field">
                 <i class="material-icons prefix">date_range</i>
-                <input id="education-startDate-new" name="startDate" required type="text" class="datepicker validate pastday">
+                <input id="education-startDate-new" name="startDate" required type="date" class="validate">
                 <label for="education-startDate-new">Start Date</label>
             </div>
 
@@ -36,7 +36,7 @@
 
             <div class="input-field">
                 <i class="material-icons prefix">date_range</i>
-                <input id="education-endDate-new" name="endDate" type="text" class="datepicker validate pastday">
+                <input id="education-endDate-new" name="endDate" type="date" class="validate">
                 <label for="education-endDate-new">End Date</label>
             </div>
 

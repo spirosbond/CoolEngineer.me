@@ -37,7 +37,7 @@
 
             <div class="input-field">
                 <i class="material-icons prefix">date_range</i>
-                <input id="workExp-startDate" name="startDate" required type="text" class="datepicker validate pastday">
+                <input id="workExp-startDate" name="startDate" required type="date" class="validate">
                 <label for="workExp-startDate">Start Date</label>
             </div>
 
@@ -48,7 +48,7 @@
 
             <div class="input-field">
                 <i class="material-icons prefix">date_range</i>
-                <input id="workExp-endDate-new" name="endDate" type="text" class="datepicker validate pastday">
+                <input id="workExp-endDate-new" name="endDate" type="date" class="validate">
                 <label for="workExp-endDate-new">End Date</label>
             </div>
 
