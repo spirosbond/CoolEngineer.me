@@ -14,7 +14,9 @@
     <asset:stylesheet src="application.css"/>
     <asset:javascript src="application_head.js"/>
 
-    <g:render template="/layouts/ganalytics"/>
+    <g:if env="production">
+        <g:render template="/layouts/ganalytics"/>
+    </g:if>
 
     <g:layoutHead/>
 </head>
