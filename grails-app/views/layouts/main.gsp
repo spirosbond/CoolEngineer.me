@@ -69,7 +69,7 @@
 
                     <div class="input-field inline">
                         <label for="subscribe-email">Email Address</label>
-                        <input id="subscribe-email" required name="MERGE0" type="email" value="${coolengineer.me.User.findByUsername(sec?.username())?.appUser?.email}" class="white-text validate" pattern="[0-9a-zA-Z_\-]*@[0-9a-zA-Z_\-]*\.[0-9a-zA-Z_\-]*">
+                        <input id="subscribe-email" name="MERGE0" type="email" value="${coolengineer.me.User.findByUsername(sec?.username())?.appUser?.email}" class="white-text validate" pattern="[0-9a-zA-Z_\-]*@[0-9a-zA-Z_\-]*\.[0-9a-zA-Z_\-]*">
                     </div>
                     <button type="submit" class="waves-effect waves-green btn-small">
                         Subscribe
