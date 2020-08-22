@@ -1,0 +1,287 @@
+/*
+*= require ldbtn.min
+*= require loading.min
+*= require_self
+*/
+
+ul.nav-bar {
+    list-style-type: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    position: -webkit-sticky !important;  /* Safari */
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 9 !important;
+}
+
+li.nav-bar-item-left {
+    float: left !important;
+}
+
+li.nav-bar-item-right {
+    float: right !important;
+}
+
+li.nav-bar-item-left a, li.nav-bar-item-right a, li.nav-bar-item-left span, li.nav-bar-item-right span {
+    display: block !important;
+    color: white !important;
+    text-align: center !important;
+    padding: 14px 16px !important;
+    text-decoration: none !important;
+    font-size: medium !important;
+}
+
+/* Change the link color to #111 (black) on hover */
+li.nav-bar-item-left a:hover, li.nav-bar-item-right a:hover, li.nav-bar-item-left span:hover, li.nav-bar-item-right span:hover {
+    background-color: #263238 !important;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+    li.nav-bar-item-right,
+    li.nav-bar-item-left {
+        float: none !important;
+    }
+}
+
+/*TODO: Doesn't seem to work...*/
+.spinner {
+    background: url(/assets/spinner.gif) 50% 50% no-repeat transparent;
+    height: 16px;
+    width: 16px;
+    padding: 2em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-indent: -9999px;
+    z-index: 9999;
+}
+
+/* Switch
+   ========================================================================== */
+.switch,
+.switch * {
+    -webkit-tap-highlight-color: transparent;
+    user-select: none; }
+
+.switch label {
+    cursor: pointer; }
+
+.switch label input[type=checkbox] {
+    opacity: 0;
+    width: 0;
+    height: 0; }
+.switch label input[type=checkbox]:checked + .lever {
+    background-color: #edc2c3; }
+.switch label input[type=checkbox]:checked + .lever:before, .switch label input[type=checkbox]:checked + .lever:after {
+    left: 18px; }
+.switch label input[type=checkbox]:checked + .lever:after {
+    background-color: #ea454b; }
+
+.switch label .lever {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 36px;
+    height: 14px;
+    background-color: rgba(0, 0, 0, 0.38);
+    border-radius: 15px;
+    margin-right: 10px;
+    transition: background 0.3s ease;
+    vertical-align: middle;
+    margin: 0 16px; }
+.switch label .lever:before, .switch label .lever:after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 0;
+    top: -3px;
+    transition: left 0.3s ease, background .3s ease, box-shadow 0.1s ease, transform .1s ease; }
+.switch label .lever:before {
+    background-color: rgba(234, 69, 75, 0.15); }
+.switch label .lever:after {
+    background-color: #F1F1F1;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12); }
+
+input[type=checkbox]:checked:not(:disabled) ~ .lever:active::before,
+input[type=checkbox]:checked:not(:disabled).tabbed:focus ~ .lever::before {
+    transform: scale(2.4);
+    background-color: rgba(234, 69, 75, 0.15); }
+
+input[type=checkbox]:not(:disabled) ~ .lever:active:before,
+input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
+    transform: scale(2.4);
+    background-color: rgba(0, 0, 0, 0.08); }
+
+.switch input[type=checkbox][disabled] + .lever {
+    cursor: default;
+    background-color: rgba(0, 0, 0, 0.12); }
+
+.switch label input[type=checkbox][disabled] + .lever:after,
+.switch label input[type=checkbox][disabled]:checked + .lever:after {
+    background-color: #949494; }
+
+.materialize-red {
+    background-color: #e51c23 !important;
+}
+
+.materialize-red-text {
+    color: #e51c23 !important;
+}
+
+.materialize-red.lighten-5 {
+    background-color: #fdeaeb !important;
+}
+
+.materialize-red-text.text-lighten-5 {
+    color: #fdeaeb !important;
+}
+
+.materialize-red.lighten-4 {
+    background-color: #f8c1c3 !important;
+}
+
+.materialize-red-text.text-lighten-4 {
+    color: #f8c1c3 !important;
+}
+
+.materialize-red.lighten-3 {
+    background-color: #f3989b !important;
+}
+
+.materialize-red-text.text-lighten-3 {
+    color: #f3989b !important;
+}
+
+.materialize-red.lighten-2 {
+    background-color: #ee6e73 !important;
+}
+
+.materialize-red-text.text-lighten-2 {
+    color: #ee6e73 !important;
+}
+
+.materialize-red.lighten-1 {
+    background-color: #ea454b !important;
+}
+
+.materialize-red-text.text-lighten-1 {
+    color: #ea454b !important;
+}
+
+.materialize-red.darken-1 {
+    background-color: #d0181e !important;
+}
+
+.materialize-red-text.text-darken-1 {
+    color: #d0181e !important;
+}
+
+.materialize-red.darken-2 {
+    background-color: #b9151b !important;
+}
+
+.materialize-red-text.text-darken-2 {
+    color: #b9151b !important;
+}
+
+.materialize-red.darken-3 {
+    background-color: #a21318 !important;
+}
+
+.materialize-red-text.text-darken-3 {
+    color: #a21318 !important;
+}
+
+.materialize-red.darken-4 {
+    background-color: #8b1014 !important;
+}
+
+.materialize-red-text.text-darken-4 {
+    color: #8b1014 !important;
+}
+
+
+.blue-grey {
+    background-color: #607d8b !important;
+}
+
+.blue-grey-text {
+    color: #607d8b !important;
+}
+
+.blue-grey.lighten-5 {
+    background-color: #eceff1 !important;
+}
+
+.blue-grey-text.text-lighten-5 {
+    color: #eceff1 !important;
+}
+
+.blue-grey.lighten-4 {
+    background-color: #cfd8dc !important;
+}
+
+.blue-grey-text.text-lighten-4 {
+    color: #cfd8dc !important;
+}
+
+.blue-grey.lighten-3 {
+    background-color: #b0bec5 !important;
+}
+
+.blue-grey-text.text-lighten-3 {
+    color: #b0bec5 !important;
+}
+
+.blue-grey.lighten-2 {
+    background-color: #90a4ae !important;
+}
+
+.blue-grey-text.text-lighten-2 {
+    color: #90a4ae !important;
+}
+
+.blue-grey.lighten-1 {
+    background-color: #78909c !important;
+}
+
+.blue-grey-text.text-lighten-1 {
+    color: #78909c !important;
+}
+
+.blue-grey.darken-1 {
+    background-color: #546e7a !important;
+}
+
+.blue-grey-text.text-darken-1 {
+    color: #546e7a !important;
+}
+
+.blue-grey.darken-2 {
+    background-color: #455a64 !important;
+}
+
+.blue-grey-text.text-darken-2 {
+    color: #455a64 !important;
+}
+
+.blue-grey.darken-3 {
+    background-color: #37474f !important;
+}
+
+.blue-grey-text.text-darken-3 {
+    color: #37474f !important;
+}
+
+.blue-grey.darken-4 {
+    background-color: #263238 !important;
+}
+
+.blue-grey-text.text-darken-4 {
+    color: #263238 !important;
+}

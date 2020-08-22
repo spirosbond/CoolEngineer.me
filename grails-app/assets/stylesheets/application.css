@@ -1,0 +1,76 @@
+/*
+* This is a manifest file that'll be compiled into grails_application.css, which will include all the files
+* listed below.
+*
+* Any CSS file within this directory can be referenced here using a relative path.
+*
+* You're free to add application-wide styles to this file and they'll appear at the top of the
+* compiled file, but it's generally better to create a new file per style scope.
+*
+*= require materialize
+*= require moving-letters
+*= require loading.min
+*= require ldbtn.min
+*= require cookieconsent.min
+*= require_self
+*/
+
+.brand-logo img {
+    height: 55px;
+    padding: 10px;
+}
+
+.no-margin{
+    margin: 0 !important;
+}
+
+.my-handle {
+    position: absolute;
+    z-index: 8;
+    padding: 10px;
+    cursor: grab;
+}
+
+.my-subhandle {
+    cursor: grab;
+}
+
+.my-delete {
+    position: absolute;
+    z-index: 8;
+    padding: 10px;
+    right: 0;
+}
+
+.my-delete-extra-padding-right {
+    position: absolute;
+    z-index: 8;
+    padding: 10px;
+    padding-right: 35px !important;
+    right: 0;
+}
+
+.my-icon {
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+/*
+!*TODO: Doesn't seem to work...*!
+.spinner {
+    !*background: url(/assets/spinner.gif) 50% 50% no-repeat transparent;*!
+    height: 30px;
+    width: 30px;
+    !*padding: 2em;*!
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-indent: -9999px;
+    z-index: 9999;
+    display: none;
+    font-size:30px
+}*/
