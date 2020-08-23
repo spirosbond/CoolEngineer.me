@@ -31,7 +31,8 @@
             </div>
 
             <div class="input-field">
-                <input id="workExp-description-new" name="description" required type="text" class="validate">
+%{--                <input id="workExp-description-new" name="description" required type="text" class="validate">--}%
+                <textarea id="workExp-description-new" name="description" required type="text" class="materialize-textarea validate"></textarea>
                 <label for="workExp-description-new">Description</label>
             </div>
 
