@@ -125,7 +125,7 @@
         var toastFlashMsg = '${flash.message}';
         if (toastFlashMsg) M.toast({html: toastFlashMsg, classes: 'rounded'});
         var toastFlashError = '${flash.error}';
-        if (toastFlashError) M.toast({html: toastFlashError, classes: 'rounded'});
+        if (toastFlashError) M.toast({html: toastFlashError, classes: 'rounded materialize-red lighten-1', displayLength: 10000});
 </g:javascript>
 
 <!-- Custom placeholder for page scripts -->

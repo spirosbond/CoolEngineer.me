@@ -4,7 +4,7 @@
 grails.plugin.springsecurity.userLookup.userDomainClassName = 'coolengineer.me.User'
 grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'coolengineer.me.UserRole'
 grails.plugin.springsecurity.authority.className = 'coolengineer.me.Role'
-grails.plugin.springsecurity.failureHandler.defaultFailureUrl = '/' //TODO: Get Toast message when login failed
+grails.plugin.springsecurity.failureHandler.defaultFailureUrl = '/login/auth'
 grails.plugin.springsecurity.successHandler.defaultTargetUrl = "/appUser/showProfile" //TODO: Send to custom target URL after login successful
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	[pattern: '/',               access: ['permitAll']],

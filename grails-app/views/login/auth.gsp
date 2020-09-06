@@ -9,7 +9,8 @@
 
 <g:render template="/layouts/navbar-dropdown" model="[activeId: 'nav-login']"/>
 
-<g:form controller="login" action="authenticate" method="POST">
+%{--<g:form controller="login" action="authenticate" method="POST">--}%
+<g:form controller="security" action="auth" method="POST">
 
     <div class="container">
         <div class="row">
