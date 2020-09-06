@@ -21,8 +21,8 @@
 <div class="row">
     <div class="input-field col s12">
         <i class="material-icons prefix">email</i>
-        <input id="email" name="email" required type="email" value="${appUser?.email}" class="validate" pattern="[0-9a-zA-Z_\-]*@[0-9a-zA-Z_\-]*\.[0-9a-zA-Z_\-]*">
+        <input id="email" name="email" required type="email" value="${appUser?.email}" class="validate" pattern="[0-9a-zA-Z_\-\.]*@[0-9a-zA-Z_\-]*\.[0-9a-zA-Z_\-\.]*">
         <label for="email">Email</label>
-        <span class="helper-text" data-error="Not a valid email address" data-success="right"></span>
+        <span class="helper-text" data-error="Not a valid email address" data-success="looks good"></span>
     </div>
 </div>
