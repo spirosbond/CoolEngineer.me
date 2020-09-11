@@ -19,7 +19,7 @@
                     <div class="card-content">
                         <span class="card-title">Login</span>
 
-                        <g:render template="/layouts/login_inputfields"/>
+                        <g:render template="/layouts/login_inputfields" model="['source_id':'auth-form']"/>
 
                     </div>
 

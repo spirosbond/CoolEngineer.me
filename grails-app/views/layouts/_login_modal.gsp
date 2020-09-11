@@ -4,7 +4,7 @@
 %{--        <g:form controller="login" action="authenticate" method="POST">--}%
         <g:form controller="security" action="auth" method="POST">
 
-            <g:render template="/layouts/login_inputfields"/>
+            <g:render template="/layouts/login_inputfields" model="['source_id':'login-modal']"/>
 
             <div class="modal-footer">
                 <g:link class="waves-effect btn-flat blue-grey-text text-lighten-1 left" controller="appUser" action="showRegister">Sign Up</g:link>

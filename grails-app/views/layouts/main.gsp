@@ -116,11 +116,6 @@
     <g:render template="/layouts/consent_pushpin"/>
 </sec:ifNotLoggedIn>
 
-%{--TODO: Make Spinner work
-<div id="spinner" class="ld ld-ring ld-cycle spinner materialize-red-text">
---}%%{--    <g:message code="spinner.alt" default="Loading&hellip;"/>--}%%{--
-</div>--}%
-
 <g:javascript>
         var toastFlashMsg = '${flash.message}';
         if (toastFlashMsg) M.toast({html: toastFlashMsg, classes: 'rounded'});
