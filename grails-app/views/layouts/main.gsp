@@ -86,7 +86,7 @@
                     <li class="valign-wrapper"><i class="material-icons prefix">email</i><a class="grey-text text-lighten-3"
                                                                                             href="mailto:contact@coolengineer.me">&emsp;contact@coolengineer.me</a></li>
                     <li class="valign-wrapper my-icon"><asset:image data-caption="LinkedIn" src="icon-lin.png"/><a class="grey-text text-lighten-3" target="_blank"
-                                                                                                                   href="http://linkedin.com">&emsp;LinkedIn</a></li>
+                                                                                                                   href="https://www.linkedin.com/company/coolengineer-me">&emsp;LinkedIn</a></li>
                     <li class="valign-wrapper my-icon"><asset:image data-caption="Facebook" src="icon-fbook.png"/><a class="grey-text text-lighten-3" target="_blank"
                                                                                                                      href="http://facebook.com">&emsp;Facebook</a></li>
                     <li class="valign-wrapper my-icon"><asset:image data-caption="Twitter" src="icon-bird.png"/><a class="grey-text text-lighten-3" target="_blank"
