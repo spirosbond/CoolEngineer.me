@@ -51,3 +51,15 @@ grails.plugin.springsecurity.logout.postOnly = false
 
 // My configuration
 coolengineerme.themes.defaultThemeId = 9
+grails {
+	mail {
+		host = "smtp.gmail.com"
+		port = 465
+		username = "bigappledev@gmail.com"
+		password = "smpontom1990"
+		props = ["mail.smtp.auth":"true",
+				 "mail.smtp.socketFactory.port":"465",
+				 "mail.smtp.socketFactory.class":"javax.net.ssl.SSLSocketFactory",
+				 "mail.smtp.socketFactory.fallback":"false"]
+	}
+}
