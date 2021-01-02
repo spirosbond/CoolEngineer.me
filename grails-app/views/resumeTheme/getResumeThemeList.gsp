@@ -18,7 +18,7 @@
                         <asset:image class="hide-on-med-and-up" data-caption="'${resumeThemeItem.name}' Demo" width="220" height="440" src="${resumeThemeItem.previewImagePath}"/>
                     </g:link>
                     <g:if test="${coolengineer.me.User.findByUsername(sec?.username())?.appUser?.resumeThemes?.last()?.id == resumeThemeItem?.id}">
-                        <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">face</i></a>
+                        <a class="btn-floating halfway-fab waves-effect waves-light red tooltipped" data-tooltip="Current"><i class="material-icons">check</i></a>
                     </g:if>
                 </sec:ifLoggedIn>
                 <sec:ifNotLoggedIn>
