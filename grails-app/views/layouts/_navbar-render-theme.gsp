@@ -6,7 +6,7 @@
             <li class="nav-bar-item-left"><g:link controller="appUser" action="showProfile">My Profile</g:link></li>
         %{--        <li class="nav-bar-item-left"><g:link controller="renderTheme" action="renderThemes">Themes</g:link></li>--}%
             <li class="nav-bar-item-right blue-grey lighten-1">
-                <a href="http://${sec?.username()}.${grailsApplication?.config?.myserver?.url}" target="_blank">${sec?.username()}.coolengineer.me</a>
+                <a href="http://${sec?.username()}.${grailsApplication?.config?.myserver?.url}" target="_blank">${sec?.username()}.islinked.me</a>
             </li>
             <li class="nav-bar-item-right materialize-red">
                 %{--<g:link controller="appUser" action="saveTheme"

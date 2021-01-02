@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimal-ui"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="keywords" content="CoolEngineer.me"/>
+    <meta name="keywords" content="IsLinked.me"/>
     <meta name="description" content="Cool Engineer Resume"/>
 
     <!-- favicon -->
@@ -146,7 +146,7 @@
 </div>
 
 <div class="footer clearfix">
-    Powered By CoolEngineer.me
+    Powered By IsLinked.me
     <a href="http://${grailsApplication?.config?.myserver?.url}"
        target="_blank">Join and Create your own online resume</a>
 </div>

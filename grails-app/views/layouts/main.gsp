@@ -4,12 +4,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <title>
-        <g:layoutTitle default="CoolEngineer.me"/>
+        <g:layoutTitle default="IsLinked.me"/>
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <asset:stylesheet src="fonts.css"/>
-    <asset:link rel="icon" href="favicon.ico" type="image/x-ico"/>
+    <g:render template="/layouts/favicon"/>
 
     <asset:stylesheet src="application.css"/>
     <asset:javascript src="application_head.js"/>
@@ -30,8 +30,8 @@
 <div class="navbar-fixed">
     <nav>
         <div class="nav-wrapper container">
-            <a href="/" class="brand-logo right hide-on-small-and-down"><asset:image src="app-logo.png"/></a>
-            <a href="/" class="brand-logo center hide-on-med-and-up"><asset:image src="app-logo-small.png"/></a>
+            <a href="/" class="brand-logo right hide-on-small-and-down"><asset:image src="app-logo.svg"/></a>
+            <a href="/" class="brand-logo center hide-on-med-and-up"><asset:image src="app-logo.svg"/></a>
             <a href="#" data-target="sidenav" class="sidenav-trigger hide-on-med-and-up no-margin"><i class="material-icons">menu</i></a>
             <ul id="nav-mobile" class="left hide-on-small-and-down">
                 <g:ifPageProperty name="page.nav-content">
@@ -84,7 +84,7 @@
                 <ul>
                     %{--                    icons from: https://www.iconfinder.com/iconsets/social-round-corner--}%
                     <li class="valign-wrapper"><i class="material-icons prefix">email</i><a class="grey-text text-lighten-3"
-                                                                                            href="mailto:contact@coolengineer.me">&emsp;contact@coolengineer.me</a></li>
+                                                                                            href="mailto:contact@islinked.me">&emsp;contact@islinked.me</a></li>
                     <li class="valign-wrapper my-icon"><asset:image data-caption="LinkedIn" src="icon-lin.png"/><a class="grey-text text-lighten-3" target="_blank"
                                                                                                                    href="https://www.linkedin.com/company/coolengineer-me">&emsp;LinkedIn</a></li>
                     <li class="valign-wrapper my-icon"><asset:image data-caption="Facebook" src="icon-fbook.png"/><a class="grey-text text-lighten-3" target="_blank"
@@ -100,7 +100,7 @@
 
     <div class="footer-copyright">
         <div class="container">
-            © ${Calendar.getInstance().get(Calendar.YEAR)} CoolEngineer.me v<g:meta name="info.app.version"/> - Created by Engineers for Engineers &#10084;
+            © ${Calendar.getInstance().get(Calendar.YEAR)} IsLinked.me v<g:meta name="info.app.version"/> - Created with &#10084; by Engineers for You
         </div>
     </div>
 </footer>

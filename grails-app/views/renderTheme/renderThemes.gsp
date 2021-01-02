@@ -24,7 +24,7 @@
     <div class="section white container">
         <div class="row">
             <h6 class="header center-align">Do you want a Theme based on YOUR resume?</h6>
-            <p class="center-align">Send it to us @<a class="" href="mailto:contact@coolengineer.me">contact@coolengineer.me</a></p>
+            <p class="center-align">Send it to us @<a class="" href="mailto:contact@islinked.me">contact@islinked.me</a></p>
         </div>
     </div>
 

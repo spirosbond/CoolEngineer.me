@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
-    <title>Cool Engineer</title>
+    <title>My Profile - IsLinked.me</title>
 </head>
 
 <body>
@@ -143,6 +143,11 @@
                         <div id="resumeThemeList">
                             <g:include controller="resumeTheme" action="getResumeThemeList" params="[active: true, max: 20, sort: 'dateCreated', order: 'desc']"/>
                         </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="row">
+                        <h6 class="header center-align">Do you want a Theme based on YOUR resume?</h6>
+                        <p class="center-align">Send it to us @<a class="" href="mailto:contact@islinked.me">contact@islinked.me</a></p>
                     </div>
                 </div>
             </div>

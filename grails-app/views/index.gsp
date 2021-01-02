@@ -2,7 +2,6 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
-    <title>Cool Engineer</title>
 </head>
 
 <body>
@@ -12,12 +11,12 @@
 <div class="section white container">
     <div class="row">
         <div class="col s12">
-            <h2 class="header">Create your personal Online Resume</h2>
+            <h2 class="header">Create your Personal Online Resume</h2>
 
             <h6>Fill your profile. Choose your theme. Get your personal online resume under <sec:ifLoggedIn><a
                     href="http://${sec?.username()}.${grailsApplication?.config?.myserver?.url}"
-                    target="_blank">${sec?.username()}.coolengineer.me</a></sec:ifLoggedIn><sec:ifNotLoggedIn><a
-                    href="#">${'<your-username>'}.coolengineer.me</a></sec:ifNotLoggedIn>!</h6>
+                    target="_blank">${sec?.username()}.islinked.me</a></sec:ifLoggedIn><sec:ifNotLoggedIn><a
+                    href="#">${'<your-username>'}.islinked.me</a></sec:ifNotLoggedIn>!</h6>
         </div>
 
         <div class="row">
@@ -70,7 +69,7 @@
                 <h2 class="center blue-grey-text"><i class="material-icons">flash_on</i></h2>
                 <h5 class="center">Super Fast - Super flexible</h5>
 
-                <p class="light">Create your profile and withing minutes have your online Resume ready! Choose from pre-optimized available themes and stand out with your personal CoolEngineer.me link.</p>
+                <p class="light">Create your profile and withing minutes have your online Resume ready! Choose from pre-optimized available themes and stand out with your personal IsLinked.me link.</p>
             </div>
         </div>
 
@@ -79,7 +78,7 @@
                 <h2 class="center blue-grey-text"><i class="material-icons">group</i></h2>
                 <h5 class="center">Be part of our Network</h5>
 
-                <p class="light">Join the CoolEngineer network and unleash your full potential. Completely free & without tricks. Use our forum for connecting with other Engineers for any topic or question.</p>
+                <p class="light">Join the IsLinked network and unleash your full potential. Completely free & without tricks. Use our forum for connecting with other Engineers for any topic or question.</p>
             </div>
         </div>
 
@@ -88,7 +87,7 @@
                 <h2 class="center blue-grey-text"><i class="material-icons">settings</i></h2>
                 <h5 class="center">We are in stage ALPHA</h5>
 
-                <p class="light">CoolEngineer.me has reached stage: Open Alpha! This means there will be bugs. There will be crashes. There will be problems. But hopefully this is still going to be a fun experience. Thank you for testing and reporting back your feebdack. Positive or Negative - all are welcome.</p>
+                <p class="light">IsLinked.me has reached stage: Open Alpha! This means there will be bugs. There will be crashes. There will be problems. But hopefully this is still going to be a fun experience. Thank you for testing and reporting back your feebdack. Positive or Negative - all are welcome.</p>
             </div>
         </div>
     </div>
@@ -130,7 +129,7 @@
 <div class="section white container">
     <div class="row">
         <h6 class="header center-align">Do you want a Theme based on YOUR resume?</h6>
-        <p class="center-align">Send it to us @<a class="" href="mailto:contact@coolengineer.me">contact@coolengineer.me</a></p>
+        <p class="center-align">Send it to us @<a class="" href="mailto:contact@islinked.me">contact@islinked.me</a></p>
     </div>
 </div>
 

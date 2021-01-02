@@ -11,7 +11,7 @@
     <li class="nav-home"><a href="/">Home</a></li>
     <li class="nav-renderThemes"><g:link controller="renderTheme" action="renderThemes">Themes</g:link></li>
     <sec:ifLoggedIn>
-        <li><a class="dropdown-trigger" href="#!" data-target="dropdown-profile"><i class="material-icons left">dvr</i>${sec?.username()}.coolengineer.me<i
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown-profile"><i class="material-icons left">dvr</i>${sec?.username()}.islinked.me<i
                 class="material-icons right">arrow_drop_down</i></a></li>
     </sec:ifLoggedIn>
     <sec:ifNotLoggedIn><li class="nav-login"><a class="modal-trigger" href="#login">Login</a></li></sec:ifNotLoggedIn>
@@ -33,7 +33,7 @@
                     <span class="white-text name">${coolengineer.me.User.findByUsername(sec?.username())?.appUser?.name} ${coolengineer.me.User.findByUsername(sec?.username())?.appUser?.surname}</span>
                 </g:link>
                 <a href="http://${sec?.username()}.${grailsApplication?.config?.myserver?.url}" target="_blank">
-                    <span class="white-text email">${sec?.username()}.coolengineer.me</span></a>
+                    <span class="white-text email">${sec?.username()}.islinked.me</span></a>
             </div>
         </li>
     </sec:ifLoggedIn>
@@ -48,7 +48,7 @@
         <li class="nav-login"><a class="modal-trigger" href="#login">Login</a></li>
     </sec:ifNotLoggedIn>
     <li><div class="divider"></div></li>
-    <li><a class="subheader">CoolEngineer.me</a></li>
+    <li><a class="subheader">IsLinked.me</a></li>
 </content>
 
 <g:javascript>

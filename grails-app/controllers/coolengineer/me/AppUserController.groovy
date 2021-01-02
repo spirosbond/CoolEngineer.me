@@ -45,7 +45,7 @@ class AppUserController {
         if (appUser.validate()) {
             userService.save(user)
             UserRole.create(user, Role.findByAuthority('ROLE_APPUSER'), true)
-            appUser.addToResumeThemes(ResumeTheme.findById(grailsApplication.config.getProperty('coolengineerme.themes.defaultThemeId'))) //TODO: Define default theme
+            appUser.addToResumeThemes(ResumeTheme.findById(grailsApplication.config.getProperty('coolengineerme.themes.defaultThemeId')))
             appUserService.save(appUser)
 
         } else {

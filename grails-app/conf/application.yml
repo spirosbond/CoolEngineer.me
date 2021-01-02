@@ -108,22 +108,22 @@ dataSource:
     driverClassName: "com.mysql.jdbc.Driver" # Added by me for MySQL connection
     dialect: org.hibernate.dialect.MySQL5InnoDBDialect # Added by me for MySQL connection
     username: mysqluser
-    password: 'CoolEngineerme90'
+    password: 'IsLinkedme90'
 
 environments:
     development:
         dataSource:
             dbCreate: create-drop
-            url: jdbc:mysql://172.28.0.7:3306/coolengineer-me #jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
+            url: jdbc:mysql://172.28.0.7:3306/islinked-me #jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
         myserver.url: "localhost:8080"  # Added by me
     test:
         dataSource:
             dbCreate: update
-            url: jdbc:mysql://172.28.0.7:3306/coolengineer-me #jdbc:h2:mem:testDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
+            url: jdbc:mysql://172.28.0.7:3306/islinked-me #jdbc:h2:mem:testDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
     production:
         dataSource:
             dbCreate: update
-            url: jdbc:mysql://172.28.0.6:3306/coolengineer-me #jdbc:h2:./prodDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
+            url: jdbc:mysql://172.28.0.6:3306/islinked-me #jdbc:h2:./prodDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
             properties:
                 jmxEnabled: true
                 initialSize: 5
@@ -142,4 +142,4 @@ environments:
                 testOnReturn: false
                 jdbcInterceptors: ConnectionState
                 defaultTransactionIsolation: 2 # TRANSACTION_READ_COMMITTED
-        myserver.url: "coolengineer.me" # Added by me
+        myserver.url: "islinked.me" # Added by me

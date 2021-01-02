@@ -14,7 +14,7 @@
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <asset:stylesheet src="fonts.css"/>
-    <asset:link rel="icon" href="favicon.ico" type="image/x-ico"/>
+    <g:render template="/layouts/favicon"/>
 
     <asset:stylesheet src="render_theme.css"/>
     <asset:javascript src="meerkatutils.js"/>

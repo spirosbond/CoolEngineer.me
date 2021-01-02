@@ -9,8 +9,8 @@
 <html>
 <head>
     <g:render template="/layouts/ganalytics"/>
-    <asset:link rel="icon" href="favicon.ico" type="image/x-ico"/>
-    <title><g:layoutTitle default="CoolEngineer.me"/></title>
+    <g:render template="/layouts/favicon"/>
+    <title><g:layoutTitle default="IsLinked.me"/></title>
     <g:layoutHead/>
 
 </head>
