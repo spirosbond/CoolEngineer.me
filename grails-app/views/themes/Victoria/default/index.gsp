@@ -9,9 +9,9 @@
 
   <!-- Favicons -->
   %{--  <link href="img/favicon.png" rel="icon">--}%
-  <asset:link rel="icon" type="image/png" href="Vicotria/favicon.png"/>
+  <asset:link rel="icon" type="image/png" href="Victoria/favicon.png"/>
   %{--  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">--}%
-  <asset:link rel="apple-touch-icon" type="image/png" href="Vicotria/apple-touch-icon.png"/>
+  <asset:link rel="apple-touch-icon" type="image/png" href="Victoria/apple-touch-icon.png"/>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic|Raleway:400,300,700" rel="stylesheet">
