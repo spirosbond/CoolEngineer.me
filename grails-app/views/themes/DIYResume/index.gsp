@@ -12,8 +12,6 @@
     <asset:stylesheet src="DIYResume/reset-fonts-grids.css" media="all"/>
     %{--	<link rel="stylesheet" type="text/css" href="resume.css" media="all" />--}%
     <asset:stylesheet src="DIYResume/resume.css" media="all"/>
-    <!-- favicon -->
-    <asset:link rel="shortcut icon" href="favicon.ico"/>
 
 </head>
 

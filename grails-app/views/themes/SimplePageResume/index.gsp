@@ -37,8 +37,7 @@
     <asset:javascript src="SimplePageResume/myriad.js"/>
     <asset:javascript src="SimplePageResume/jquery.colorbox.js"/>
     <asset:javascript src="SimplePageResume/custom.js"/>
-    <!-- favicon -->
-    <asset:link rel="shortcut icon" href="favicon.ico"/>
+
     <script type="text/javascript">
         Cufon.replace('h1,h2');
     </script>

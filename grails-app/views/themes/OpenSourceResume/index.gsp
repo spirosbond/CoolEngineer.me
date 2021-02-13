@@ -6,10 +6,6 @@
     <meta name="keywords" content="IsLinked.me"/>
     <meta name="description" content="Cool Engineer Resume"/>
 
-    <!-- favicon -->
-    <asset:link rel="icon" href="favicon.ico"/>
-    <asset:link rel="shortcut icon" href="favicon.ico"/>
-
     <asset:link rel="apple-touch-icon-precomposed" href="OpenSourceResume/apple-touch-icon-precomposed.png"/>
     <!--loading css-->
     <asset:stylesheet src="OpenSourceResume/pace-theme-flash.css" type="text/css"/>

@@ -5,8 +5,6 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <!-- favicon -->
-    <asset:link rel="shortcut icon" href="favicon.ico"/>
 
     <title>${this.appUser?.name} ${this.appUser?.surname}</title>
 

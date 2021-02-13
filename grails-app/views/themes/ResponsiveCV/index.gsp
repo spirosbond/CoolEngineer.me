@@ -8,8 +8,6 @@
     <meta charset="UTF-8">
 
     <asset:stylesheet src="ResponsiveCV/style.css"/>
-    <!-- favicon -->
-    <asset:link rel="shortcut icon" href="favicon.ico"/>
 
     %{--    <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>--}%
     <asset:stylesheet src="ResponsiveCV/fonts.css"/>

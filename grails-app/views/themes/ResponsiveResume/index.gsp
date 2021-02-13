@@ -10,8 +10,6 @@
     <!-- stylesheets -->
     %{--	<link rel="stylesheet" href="style.css" type="text/css" />--}%
     <asset:stylesheet src="ResponsiveResume/style.css"/>
-    <!-- favicon -->
-    <asset:link rel="shortcut icon" href="favicon.ico"/>
 
 </head>
 
