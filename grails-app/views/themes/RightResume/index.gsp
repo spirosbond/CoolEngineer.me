@@ -81,10 +81,13 @@
           <div class="col-md-5 offset-md-1">
             <div class="row mt-2">
               <div class="col-sm-4">
-                <div class="pb-1">Birth Date</div>
+                <div class="pb-1">Age</div>
               </div>
               <div class="col-sm-8">
-                <div class="pb-1 text-secondary"><g:formatDate format="yyy-MM-dd" date="${this.appUser?.dateOfBirth}"/></div>
+                <div class="pb-1 text-secondary">
+                  ${Calendar.getInstance().get(Calendar.YEAR) - 1900 - this.appUser?.dateOfBirth?.getYear()}
+%{--                  <g:formatDate format="yyy-MM-dd" date="${this.appUser?.dateOfBirth}"/>--}%
+                </div>
               </div>
               <div class="col-sm-4">
                 <div class="pb-1">Email</div>
