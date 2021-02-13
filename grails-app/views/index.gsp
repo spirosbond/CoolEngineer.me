@@ -121,7 +121,7 @@
     <div class="row">
         <h2 class="header">Latest Themes</h2>
 
-        <g:include controller="resumeTheme" action="getResumeThemeList" params="[active: true, max: 7, sort: 'dateCreated', order: 'desc']"/>
+        <g:include controller="resumeTheme" action="getResumeThemeList" params="[active: true, max: 8, sort: 'dateCreated', order: 'desc']"/>
 
     </div>
 </div>

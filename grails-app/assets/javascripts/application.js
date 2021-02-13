@@ -61,6 +61,6 @@ $(document).ready(function () {
 
 });
 
-function hide(element){
+function hide(element) {
     element.classList.add("hide");
 }

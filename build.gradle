@@ -10,7 +10,7 @@ buildscript {
     }
 }
 
-version "0.6.1"
+version "0.71"
 group "coolengineer.me"
 
 apply plugin:"eclipse"
@@ -80,8 +80,8 @@ dependencies {
 
 bootRun {
     jvmArgs(
-        '-Dspring.output.ansi.enabled=always', 
-        '-noverify', 
+        '-Dspring.output.ansi.enabled=always',
+        '-noverify',
         '-XX:TieredStopAtLevel=1',
         '-Xmx1024m')
     sourceResources sourceSets.main
