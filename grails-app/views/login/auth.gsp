@@ -24,12 +24,9 @@
                     </div>
 
                     <div class="card-action">
-                        <g:link class="waves-effect btn-flat blue-grey-text text-lighten-1" controller="appUser" action="showRegister">Sign Up</g:link>
-                        <g:link class="waves-effect btn-flat blue-grey-text text-lighten-1" controller="register" action="forgotPassword">Password Reset</g:link>
-                        <button type="submit" class="waves-effect waves-green btn right ld-over-inverse" onclick="submitElementClicked = this">
-                            Login
-                            <div class="ld ld-ring ld-spin"></div>
-                        </button>
+
+                        <g:render template="/layouts/login_actionbuttons" model="['source_id':'login-modal']"/>
+
                     </div>
 
                 </div>

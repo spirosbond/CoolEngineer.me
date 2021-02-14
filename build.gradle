@@ -10,7 +10,7 @@ buildscript {
     }
 }
 
-version "0.71"
+version "0.8"
 group "coolengineer.me"
 
 apply plugin:"eclipse"

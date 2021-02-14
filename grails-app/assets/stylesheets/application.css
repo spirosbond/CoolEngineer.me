@@ -59,6 +59,9 @@
     text-transform: lowercase;
 }
 
+.my-text-nowrap {
+    white-space: nowrap;
+}
 /*
 !*TODO: Doesn't seem to work...*!
 .spinner {
