@@ -33,6 +33,7 @@ class BootStrap {
         def testResumeTheme10 = new ResumeTheme(name: 'Victoria Resume', path: '/themes/Victoria/index.gsp', defaultPath: '/themes/Victoria/default/index.gsp', previewImagePath: '/Victoria/victoria-preview.png').save()
         def testResumeTheme11 = new ResumeTheme(name: 'Right Resume', path: '/themes/RightResume/index.gsp', defaultPath: '/themes/RightResume/default/index.gsp', previewImagePath: '/RightResume/rightresume-preview.png').save()
         def testResumeTheme12 = new ResumeTheme(name: 'Creative Resume', path: '/themes/CreativeResume/index.gsp', defaultPath: '/themes/CreativeResume/default/index.gsp', previewImagePath: '/CreativeResume/creativeresume-preview.png').save()
+        def testResumeTheme13 = new ResumeTheme(name: 'Kelvin Resume', path: '/themes/KelvinResume/index.gsp', defaultPath: '/themes/KelvinResume/default/index.gsp', previewImagePath: '/KelvinResume/kelvinresume-preview.png').save()
 
         def educationItem1 = new Education(startDate: new Date(System.currentTimeMillis()), endDate: new Date(System.currentTimeMillis()), name: 'School', sector: 'High School', appUser: testAppUser).save()
         def educationItem2 = new Education(startDate: new Date(System.currentTimeMillis()), current: true, name: 'Aristotle Uni', sector: 'E&E Eng', appUser: testAppUser).save()
