@@ -119,9 +119,13 @@
 
 <div class="section white container">
     <div class="row">
-        <h2 class="header">Latest Themes</h2>
+        <h2 class="header">Latest Themes <a class="waves-effect btn-flat" href="${createLink(controller: "renderTheme", action: "renderThemes")}"><i class="material-icons right">arrow_forward</i>See all</a></h2>
 
-        <g:include controller="resumeTheme" action="getResumeThemeList" params="[active: true, max: 8, sort: 'dateCreated', order: 'desc']"/>
+        <g:include controller="resumeTheme" action="getResumeThemeList" params="[active: true, max: 8, sort: 'id', order: 'desc']"/>
+
+        <div class="s12 center-align hide-on-med-and-up">
+            <a class="waves-effect btn-flat" href="${createLink(controller: "renderTheme", action: "renderThemes")}"><i class="material-icons right">arrow_forward</i>See all themes</a>
+        </div>
 
     </div>
 </div>

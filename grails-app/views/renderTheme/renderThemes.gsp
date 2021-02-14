@@ -16,7 +16,7 @@
         <div class="row">
             <h2 class="header">Choose your Theme</h2>
 
-            <g:include controller="resumeTheme" action="getResumeThemeList" params="[active: true, max: 20, sort: 'dateCreated', order: 'desc']"/>
+            <g:include controller="resumeTheme" action="getResumeThemeList" params="[active: true, max: 30, sort: 'id', order: 'desc']"/>
 
         </div>
     </div>

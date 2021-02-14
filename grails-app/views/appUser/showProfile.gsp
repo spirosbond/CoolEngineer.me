@@ -141,7 +141,7 @@
                         <h4>Choose your Theme</h4>
 
                         <div id="resumeThemeList">
-                            <g:include controller="resumeTheme" action="getResumeThemeList" params="[active: true, max: 20, sort: 'dateCreated', order: 'desc']"/>
+                            <g:include controller="resumeTheme" action="getResumeThemeList" params="[active: true, max: 30, sort: 'id', order: 'desc']"/>
                         </div>
                     </div>
                     <div class="divider"></div>
