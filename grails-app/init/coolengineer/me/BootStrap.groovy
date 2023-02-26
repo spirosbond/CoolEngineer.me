@@ -12,8 +12,8 @@ class BootStrap {
         def adminRole = new Role(authority: 'ROLE_ADMIN').save()
         def appUserRole = new Role(authority: 'ROLE_APPUSER').save() //TODO: Define access of ROLE_APPUSER
 
-        def testUser = new User(username: 'spirosbond', password: 'smpontom1990').save()
-        def demoUser = new User(username: 'demo', password: 'smpontom1990').save()
+        def testUser = new User(username: 'spirosbond', password: '##hidden##').save()
+        def demoUser = new User(username: 'demo', password: '##hidden##').save()
 
         UserRole.create(testUser, adminRole, true)
         UserRole.create(demoUser, appUserRole, true)
