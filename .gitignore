@@ -10,3 +10,8 @@ out
 logs
 classes
 *.env
+grails-app/views/layouts/_ganalytics.gsp
+*.war
+*.key
+*.crt
+*.bz2

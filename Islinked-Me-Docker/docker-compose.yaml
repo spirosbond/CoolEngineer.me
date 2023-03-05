@@ -1,0 +1,121 @@
+version: '3.5'
+
+services:
+  nginxssl:
+    image: nginxssl:latest
+    restart: always
+    ports:
+      - 80:80
+      - 443:443
+    depends_on:
+      - islinked-me
+      - islinked-me-dev
+    networks:
+      frontend:
+        ipv4_address: 172.28.0.3
+
+  islinked-me-dev:
+    # depends_on:
+    #   - nginxssl
+    image: islinked-me:dev
+    networks:
+      frontend:
+        ipv4_address: 172.28.0.4
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 400M
+        reservations:
+          memory: 256M
+    #volumes:
+    #  - "dev-data:/root/db/"
+
+  islinked-me:  
+    # depends_on:
+    #   - nginxssl  
+    image: islinked-me:latest
+    restart: always
+    networks:
+      frontend:
+        ipv4_address: 172.28.0.5
+    # deploy:
+    #   resources:
+    #     limits:
+    #       cpus: 0.50
+    #       memory: 300M
+    #     reservations:
+    #       memory: 256M
+    #volumes:
+    #  - "prod-data:/root/db/"
+
+  db:
+    image: mysql:5
+    restart: always
+    #command: --max_allowed_packet=32505856      # Set max_allowed_packet to 256M (or any other value)
+    environment:
+      MYSQL_ROOT_PASSWORD: ${mysql_root_pass}
+      MYSQL_USER: ${mysql_user}
+      MYSQL_PASSWORD: ${mysql_pass}
+      MYSQL_DATABASE: ${mysql_db}
+    networks:
+      frontend:
+        ipv4_address: 172.28.0.6
+    # deploy:
+    #   resources:
+    #     limits:
+    #       cpus: 0.50
+    #       memory: 128M
+    #     reservations:
+    #       memory: 64M
+    #ports:
+      # <Port exposed> : < MySQL Port running inside container>
+      #- '3306:3306'
+    expose:
+      # Opens port 3306 on the container
+      - '3306'
+    volumes:
+      - "db-volume:/var/lib/mysql"
+      - ./mysql/:/etc/mysql/conf.d
+
+  db-dev:
+    image: mysql:5
+    restart: always
+    #command: --max_allowed_packet=32505856      # Set max_allowed_packet to 256M (or any other value)
+    environment:
+      MYSQL_ROOT_PASSWORD: ${mysql_root_pass}
+      MYSQL_USER: ${mysql_user}
+      MYSQL_PASSWORD: ${mysql_pass}
+      MYSQL_DATABASE: ${mysql_db}
+    networks:
+      frontend:
+        ipv4_address: 172.28.0.7
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 128M
+        reservations:
+          memory: 64M
+    #ports:
+      # <Port exposed> : < MySQL Port running inside container>
+      #- '3307:3306'
+    expose:
+      # Opens port 3306 on the container
+      - '3306'
+    volumes:
+      - "db-dev-volume:/var/lib/mysql"
+      - ./mysql/:/etc/mysql/conf.d
+
+networks:
+  frontend:
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.28.0.0/16
+
+volumes:
+  #prod-data: #only needed with embedded db (h5)
+  #dev-data: #only needed with embedded db (h5)
+  db-volume:
+  db-dev-volume:
